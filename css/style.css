@@ -1,0 +1,222 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "europa",sans-serif;
+}
+
+.home-wrapper {
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.home-title {
+    margin-left: 8vw;
+    font-size: 1.5em;
+    padding-top: 40px;
+    letter-spacing: .6em;
+}
+
+.home-text {
+    font-size: 1.1em;
+    margin-left: 8vw;
+    margin-top: 20px;
+}
+
+.home-indent {
+    margin-left: 20px;
+}
+
+.home-links {
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-left: 68vw;
+    letter-spacing: 0.4em;
+    line-height: 3em;
+}
+
+.home-links a:link, a:visited {
+    text-decoration-line: none;
+    color: #000;
+}
+
+.home-links a:hover, a:active {
+    color: #e31313;
+}
+
+
+
+
+/*
+.about {
+    background-color: #010101;
+    color: #c2c2c2;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    grid-column-gap: 20px;
+
+}
+
+.about-profile {
+    background: url("../img/profile.jpg") no-repeat;
+    background-position: center;
+    grid-row-end: span 5;
+}
+
+.about-text {
+    display: grid;
+    grid-row: 1fr 2fr 1fr;
+    grid-row-gap: 30%;
+    margin: 20px 0;
+}
+
+.about-text-text {
+    font-size: 1em;
+}
+
+.about-text-title, .about-text-portfolio {
+    font-size: 2em;
+    letter-spacing: 0.4em;
+}
+
+.about-text-portfolio {
+    align-self: :
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8fr 1fr;
+    background-color: #010101;
+    color: #c2c2c2;
+    background-size: cover;
+}
+
+.portfolio-illustration {
+    background: url("../img/illustration.jpg") no-repeat;
+}
+
+.portfolio-photography {
+    background: url("../img/photography.jpg") no-repeat;
+}
+
+.portfolio-web {
+    background: url("../img/web.jpg") no-repeat;
+}
+
+*/
+
+.portfolio-wrapper {
+	display: grid;
+    grid-template-columns: [col] 1fr [col] 1fr [col] 1fr ;
+    grid-template-rows: [row] 9fr [row] 9fr [row] 9fr [row] 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+	background-color: #010101;
+	color: #010101;
+	padding: 20px;
+	font-size: 150%;
+}
+
+.about-profile {
+    background: url("../img/profile.jpg") no-repeat;
+    background-position: center;
+	grid-column: col 1;
+	grid-row: row;
+    background-color: #eee;
+}
+
+.about-text {
+	grid-column: col 2 / span 2;
+	grid-row: row;
+    background-color: #010101;
+    color: #c2c2c2;
+}
+
+.about-text-text {
+    padding: 0 10% 0 15%;
+}
+
+.about-head, .about-portfolio {
+    font-size: 1.5em;
+    letter-spacing: .6em;
+    margin-bottom: 5%;
+    margin-top: 25%;
+}
+
+.about-body {
+    line-height: 1.5em;
+    letter-spacing: .07em;
+}
+
+.portfolio-illustration {
+    background: url("../img/illustration.jpg") no-repeat;
+    background-position: center;
+	grid-column: col;
+	grid-row: row 2;
+    background-color: #000;
+}
+
+.portfolio-photography {
+    background: url("../img/photography.jpg") no-repeat;
+    background-position: center;
+	grid-column: col 2;
+	grid-row: row 2;
+    background-color: #444;
+}
+
+.portfolio-web {
+    background: url("../img/web.jpg") no-repeat;
+    background-position: center;
+	grid-column: col 3;
+	grid-row: row 2;
+    background-color: #777;
+}
+
+.portfolio-blog {
+    background: url("../img/blog.jpg") no-repeat;
+    background-position: center;
+    grid-column: col 1 / span 3;
+    grid-row: row 3;
+    background-color: #333;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
+    grid-template-rows: [row] 1fr [row] 1fr;
+    grid-column: col 1 / span 3;
+    background-color: #010101;
+    color: #c2c2c2;
+    padding: 10px
+}
+
+.footer-contact {
+    grid-column: col 1 / span 4;
+    grid-row: row 1;
+    margin-bottom: 10px;
+}
+
+.footer-phone {
+    grid-column: col 1;
+    grid-row: row 2;
+}
+
+.footer-email {
+    grid-column: col 2 / span 1;
+    grid-row: row 2;
+}
+
+.footer-twitter {
+    grid-column: col 3 / span 1;
+    grid-row: row 2;
+}
+
+.footer-github {
+    grid-column: col 4 / span 1;
+    grid-row: row 2;
+}
