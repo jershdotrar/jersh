@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "europa",sans-serif;
+    font-family: "europa", sans-serif;
 }
 
 .home-wrapper {
@@ -30,18 +30,18 @@ body {
 
 .home-links {
     font-size: 1.5em;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 68vw;
     letter-spacing: 0.4em;
     line-height: 3em;
 }
 
-.home-links a:link, a:visited {
+.home-wrapper a:link, .home-wrapper a:visited {
     text-decoration-line: none;
     color: #000;
 }
 
-.home-links a:hover, a:active {
+.home-wrapper a:hover, .home-wrapper a:active {
     color: #e31313;
 }
 
@@ -107,6 +107,8 @@ body {
 
 */
 
+
+/*************PORTFOLIO WRAPPER*************/
 .portfolio-wrapper {
 	display: grid;
     grid-template-columns: [col] 1fr [col] 1fr [col] 1fr ;
@@ -121,6 +123,8 @@ body {
 	padding: 20px;
 	font-size: 150%;
 }
+
+/*************ABOUT*************/
 
 .about-profile {
     background: url("../img/profile.jpg") no-repeat;
@@ -153,37 +157,106 @@ body {
     letter-spacing: .07em;
 }
 
+/*************PORTFOLIO*************/
+
 .portfolio-illustration {
-    background: url("../img/illustration.jpg") no-repeat;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/illustration.jpg") no-repeat;
     background-position: center;
 	grid-column: col;
 	grid-row: row 2;
-    background-color: #000;
+    min-height: 100%;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: .6em;
+    text-align: center;
+}
+
+.portfolio-illustration:hover {
+    background: url("../img/illustration.jpg") no-repeat;
+    background-position: center;
 }
 
 .portfolio-photography {
-    background: url("../img/photography.jpg") no-repeat;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/photography.jpg") no-repeat;
     background-position: center;
 	grid-column: col 2;
 	grid-row: row 2;
-    background-color: #444;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: .6em;
+    text-align: center;
+}
+
+.portfolio-photography:hover {
+    background: url("../img/photography.jpg") no-repeat;
+    background-position: center;
 }
 
 .portfolio-web {
-    background: url("../img/web.jpg") no-repeat;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/web.jpg") no-repeat;
     background-position: center;
 	grid-column: col 3;
 	grid-row: row 2;
-    background-color: #777;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: .6em;
+    text-align: center;
 }
 
+.portfolio-web:hover {
+    background: url("../img/web.jpg") no-repeat;
+    background-position: center;
+}
+
+.portfolio-text {
+    margin: 65% 0 0 0;
+}
+
+/*************BLOG*************/
+
 .portfolio-blog {
-    background: url("../img/blog.jpg") no-repeat;
+    background: linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../img/blog.jpg") no-repeat;
     background-position: center;
     grid-column: col 1 / span 3;
     grid-row: row 3;
     background-color: #333;
 }
+
+.blog-text {
+    max-width: 50%;
+}
+
+.blog-text-inner {
+    text-align: right;
+    margin-top: 10em;
+    color: #c2c2c2;
+}
+
+.blog-text-inner p {
+    font-size: 1.2em;
+    letter-spacing: .5em;
+    margin-right: .4em;
+    margin-top: 5em;
+    font-weight: 300;
+}
+
+.blog-text-inner h1 {
+    font-weight: 400;
+    font-size: 1.7em;
+    letter-spacing: .7em;
+}
+
+.portfolio-blog a:link, .portfolio-blog a:visited {
+    text-decoration-line: none;
+    color: #c2c2c2;
+}
+
+.portfolio-blog a:hover, .portfolio-blog a:active {
+    color: #e31313;
+}
+
+
+/*************FOOTER*************/
 
 .footer {
     display: grid;
@@ -195,10 +268,22 @@ body {
     padding: 10px
 }
 
+
+.footer a:link, .footer a:visited {
+    text-decoration-line: none;
+    color: #c2c2c2;
+}
+
+.footer a:hover, .footer a:active {
+    color: #e31313;
+}
+
+
 .footer-contact {
     grid-column: col 1 / span 4;
     grid-row: row 1;
     margin-bottom: 10px;
+    letter-spacing: .4em;
 }
 
 .footer-phone {
